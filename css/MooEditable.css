@@ -1,0 +1,74 @@
+.mooeditable-container { position:relative;	border:1px solid #ddd;	width:800px; height:150px; border:1px solid #727272; box-shadow:0 0 6px #B4B4B4 inset; -moz-box-shadow:0 0 6px #B4B4B4 inset; -webkit-box-shadow:0 0 6px #B4B4B4 inset; }
+.mooeditable-ui-toolbar { color:inherit; background-color:rgba(223, 223, 223, 0.5);	padding:2px; border-bottom:1px solid #B8B8B8; box-shadow:0px -1px 2px rgba(189, 189, 189, 0.5) inset; -moz-box-shadow:0px -1px 2px rgba(189, 189, 189, 0.5) inset; -webkit-box-shadow:0px -1px 2px rgba(189, 189, 189, 0.5) inset; }
+.mooeditable-ui-toolbar:after { content:".";	display:block; height:0; clear:both; visibility:hidden; }
+.mooeditable-ui-toolbar .toolbar-item, .mooeditable-ui-toolbar .toolbar-separator { display:-moz-inline-box; display:inline-block; vertical-align:middle; }
+.mooeditable-ui-toolbar .mooeditable-ui-button  { cursor:pointer; border:0; width:auto; height:auto; margin:2px; padding:5px; vertical-align:middle; color:inherit; background-color:transparent; }
+* html .mooeditable-ui-toolbar .mooeditable-ui-button  { width:24px; overflow:visible; padding:2px 4px; }
+*:first-child+html .mooeditable-ui-toolbar .mooeditable-ui-button { min-width:24px;	overflow:visible; padding:2px 4px; }
+.mooeditable-ui-toolbar .mooeditable-ui-button.active { color:inherit; background-color:none; }
+.mooeditable-ui-toolbar .mooeditable-ui-button.disabled { cursor:default; opacity:0.4;}
+.mooeditable-ui-toolbar .mooeditable-ui-button.disabled:hover {	color:inherit; background-color:transparent; }
+.mooeditable-ui-toolbar .mooeditable-ui-button .button-icon { display:inline-block;	width:16px;	height:16px; vertical-align:middle; color:inherit; background:transparent url('../images/cowboy-sprite.png') no-repeat; background-size:44px 440px; }
+.mooeditable-ui-toolbar .mooeditable-ui-button .button-text { display:none;	font-size:13px;	vertical-align:middle; }
+.mooeditable-ui-toolbar .mooeditable-ui-button-text .button-icon { display:none; }
+.mooeditable-ui-toolbar .mooeditable-ui-button-text .button-text { display:inline; }
+.mooeditable-ui-toolbar .mooeditable-ui-button-icon-text { width:auto; }
+.mooeditable-ui-toolbar .mooeditable-ui-button-icon-text .button-text {	display:inline;	margin-left:4px; }
+.mooeditable-ui-toolbar .toolbar-separator { width:1px;	height:24px; margin:2px; text-indent:-999em; color:inherit; background-color:#fafafa; }
+.mooeditable-iframe { margin:0;	padding:0; border:0; width:100%; vertical-align:top; height:113px; }
+.mooeditable-textarea {	margin:0 !important; padding:0 !important; border:0 !important;	width:100% !important; resize:none !important; outline:0 !important; height:113px; background:none; }
+.mooeditable-ui-dialog { color:inherit;	background-color:#ddd; position:absolute; display:block; cursor:default; font-size:12px; z-index:100; width:100%; }
+.mooeditable-ui-dialog .dialog-content { padding:4px 10px; }
+.mooeditable-ui-dialog .dialog-content * { vertical-align:middle; }
+.mooeditable-ui-dialog input { margin:0 8px; }
+.mooeditable-ui-dialog input.text {	width:300px; }
+.mooeditable-ui-button-overlay { color:inherit;	background-color:#ddd; font-size:12px; z-index:100; outline:0; -moz-outline:0; -webkit-outline:0; }
+.mooeditable-ui-button-overlay .overlay-content { padding:10px; }
+
+/* Icon */
+.mooeditable-ui-toolbar .mooeditable-ui-button:hover .button-icon { -webkit-filter:drop-shadow(0 1px 2px rgba(0,0,0,1)); -moz-filter:drop-shadow(0 1px 2px rgba(0,0,0,1));
+-ms-filter:drop-shadow(0 1px 2px rgba(0,0,0,1)); -o-filter:drop-shadow(0 1px 2px rgba(0,0,0,1)); filter:drop-shadow(0 1px 2px rgba(0,0,0,1)); opacity:0.8;}
+.mooeditable-ui-toolbar .mooeditable-ui-button.onActive, .mooeditable-ui-toolbar .mooeditable-ui-button:hover, .mooeditable-ui-toolbar .toggleview-item.onActive:hover { border-radius:4px; -moz-border-radius:4px; -webkit-border-radius:4px; background-color:rgba(199, 199, 199, 0.8); box-shadow:0 0 4px rgba(0, 0, 0, 0.5) inset; -moz-box-shadow:0 0 4px rgba(0, 0, 0, 0.5) inset; -webkit-box-shadow:0 0 4px rgba(0, 0, 0, 0.5) inset; }
+.mooeditable-ui-toolbar .toggleview-item.onActive { box-shadow:none; border-radius:0; background:none; }
+.mooeditable-ui-toolbar .bold-item .button-icon { background-position:-3px -26px; } 
+.mooeditable-ui-toolbar .italic-item .button-icon { background-position:-3px -48px; } 
+.mooeditable-ui-toolbar .underline-item .button-icon { background-position:-3px -70px; } 
+.mooeditable-ui-toolbar .strikethrough-item .button-icon { background-position:-3px -92px; } 
+.mooeditable-ui-toolbar .insertorderedlist-item .button-icon { background-position:-3px -224px; }  
+.mooeditable-ui-toolbar .insertunorderedlist-item .button-icon { background-position:-3px -202px; } 
+.mooeditable-ui-toolbar .indent-item .button-icon { background-position:-3px -268px; }
+.mooeditable-ui-toolbar .outdent-item .button-icon { background-position:-3px -246px; }
+.mooeditable-ui-toolbar .undo-item .button-icon { background-position:-3px -378px; }
+.mooeditable-ui-toolbar .redo-item .button-icon { background-position:-3px -400px; }
+.mooeditable-ui-toolbar .createlink-item .button-icon { background-position:-3px -312px; } 
+.mooeditable-ui-toolbar .unlink-item .button-icon { background-position:-3px -334px; }
+.mooeditable-ui-toolbar .urlimage-item .button-icon { background-position:-3px -290px; } 
+.mooeditable-ui-toolbar .toggleview-item.onActive .button-icon { background-position:-3px -422px; }
+.mooeditable-ui-toolbar .toggleview-item .button-icon { background-position:-3px -356px; }
+.mooeditable-ui-toolbar .justifyfull-item .button-icon { background-position:-3px -114px; } 
+.mooeditable-ui-toolbar .justifyleft-item .button-icon { background-position:-3px -136px; } 
+.mooeditable-ui-toolbar .justifycenter-item .button-icon { background-position:-3px -158px; } 
+.mooeditable-ui-toolbar .justifyright-item .button-icon { background-position:-3px -180px; } 
+
+.mooeditable-ui-toolbar .bold-item:hover .button-icon, .mooeditable-ui-toolbar .bold-item.hover .button-icon { background-position:-25px -26px; }
+.mooeditable-ui-toolbar .italic-item:hover .button-icon, .mooeditable-ui-toolbar .italic-item.hover .button-icon { background-position:-25px -48px; } 
+.mooeditable-ui-toolbar .underline-item:hover .button-icon, .mooeditable-ui-toolbar .underline-item.hover .button-icon { background-position:-25px -70px; } 
+.mooeditable-ui-toolbar .strikethrough-item:hover .button-icon, .mooeditable-ui-toolbar .strikethrough-item.hover .button-icon { background-position:-25px -92px; } 
+.mooeditable-ui-toolbar .insertorderedlist-item:hover .button-icon, .mooeditable-ui-toolbar .insertorderedlist-item.hover .button-icon { background-position:-25px -224px; }  
+.mooeditable-ui-toolbar .insertunorderedlist-item:hover .button-icon, .mooeditable-ui-toolbar .insertunorderedlist-item.hover .button-icon { background-position:-25px -202px; } 
+.mooeditable-ui-toolbar .indent-item:hover .button-icon, .mooeditable-ui-toolbar .indent-item.hover .button-icon { background-position:-25px -268px; }
+.mooeditable-ui-toolbar .outdent-item:hover .button-icon, .mooeditable-ui-toolbar .outdent-item.hover .button-icon { background-position:-25px -246px; }
+.mooeditable-ui-toolbar .undo-item:hover .button-icon, .mooeditable-ui-toolbar .undo-item.hover .button-icon { background-position:-25px -378px; }
+.mooeditable-ui-toolbar .redo-item:hover .button-icon, .mooeditable-ui-toolbar .redo-item.hover .button-icon { background-position:-25px -400px; }
+.mooeditable-ui-toolbar .createlink-item:hover .button-icon, .mooeditable-ui-toolbar .createlink-item.hover .button-icon { background-position:-25px -312px; } 
+.mooeditable-ui-toolbar .unlink-item:hover .button-icon, .mooeditable-ui-toolbar .unlink-item.hover .button-icon { background-position:-25px -334px; }
+.mooeditable-ui-toolbar .urlimage-item:hover .button-icon, .mooeditable-ui-toolbar .urlimage-item.hover .button-icon { background-position:-25px -290px; } 
+.mooeditable-ui-toolbar .toggleview-item:hover .button-icon, .mooeditable-ui-toolbar .toggleview-item.hover .button-icon { background-position:-25px -356px; }
+.mooeditable-ui-toolbar .toggleview-item.onActive:hover .button-icon, .mooeditable-ui-toolbar .toggleview-item.onActive.hover .button-icon { background-position:-25px -422px; }
+.mooeditable-ui-toolbar .justifyfull-item:hover .button-icon, .mooeditable-ui-toolbar .justifyfull-item.hover .button-icon { background-position:-25px -114px; } 
+.mooeditable-ui-toolbar .justifyleft-item:hover .button-icon, .mooeditable-ui-toolbar .justifyleft-item.hover .button-icon { background-position:-25px -136px; } 
+.mooeditable-ui-toolbar .justifycenter-item:hover .button-icon, .mooeditable-ui-toolbar .justifycenter-item.hover .button-icon { background-position:-25px -158px; } 
+.mooeditable-ui-toolbar .justifyright-item:hover .button-icon, .mooeditable-ui-toolbar .justifyright-item.hover .button-icon { background-position:-25px -180px; } 
+
+select {  background:url('../images/select.png') right no-repeat rgba(255, 255, 255, 0.8); background-size:20px 20px; }
+select.formatBlock-item { border:none; -webkit-appearance:none; width:100px; }
